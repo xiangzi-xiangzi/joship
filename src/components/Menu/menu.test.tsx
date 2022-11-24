@@ -2,7 +2,7 @@
  * @Author: xiangzi xiagnzipapa@qq.com
  * @Date: 2022-11-02 14:49:26
  * @LastEditors: xiangzi xiagnzipapa@qq.com
- * @LastEditTime: 2022-11-02 15:42:40
+ * @LastEditTime: 2022-11-24 10:17:21
  * @Description:
  *
  * Copyright (c) 2022 by xiangzi xiagnzipapa@qq.com, All Rights Reserved.
@@ -19,12 +19,12 @@ import Menu, { MenuProps } from './menu';
 import MenuItem from './menuItem';
 
 const testProps: MenuProps = {
-  defaultIndex: 0,
+  defaultIndex: '0',
   onSelect: jest.fn(),
   className: 'test',
 };
 const testVerProps: MenuProps = {
-  defaultIndex: 0,
+  defaultIndex: '0',
   mode: 'vertical',
 };
 const generateMenu = (props: MenuProps) => {
@@ -61,7 +61,7 @@ describe('test Menu and MenuItem component', () => {
     fireEvent.click(thirdItem);
     expect(thirdItem).toHaveClass('menu-item is-active');
     expect(activeElement).not.toHaveClass('menu-item is-active');
-    expect(testProps.onSelect).toHaveBeenCalledWith(2);
+    expect(testProps.onSelect).toHaveBeenCalledWith('2');
     fireEvent.click(disabledElement);
     expect(disabledElement).not.toHaveClass('is-active');
     expect(testProps.onSelect).not.toHaveBeenCalledWith(1);
