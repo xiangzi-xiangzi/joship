@@ -1,17 +1,22 @@
+/*
+ * @Author: xiangzi xiagnzipapa@qq.com
+ * @Date: 2022-10-21 14:20:43
+ * @LastEditors: xiangzi xiagnzipapa@qq.com
+ * @LastEditTime: 2022-11-07 16:13:38
+ * @Description:
+ *
+ * Copyright (c) 2022 by xiangzi xiagnzipapa@qq.com, All Rights Reserved.
+ */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
