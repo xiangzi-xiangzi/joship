@@ -1,18 +1,18 @@
 /*
  * @Author: xiangzi xiagnzipapa@qq.com
  * @Date: 2022-11-03 14:14:36
- * @LastEditors: xiangzi xiagnzipapa@qq.com
- * @LastEditTime: 2022-11-07 16:17:38
+ * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
+ * @LastEditTime: 2022-11-30 15:29:21
  * @Description:
  *
  * Copyright (c) 2022 by xiangzi xiagnzipapa@qq.com, All Rights Reserved.
  */
 import React, { FunctionComponentElement, useContext, useState } from 'react';
 import classNames from 'classnames';
-import { CSSTransition } from 'react-transition-group';
 import { MenuContext } from './menu';
 import { MenuItemProps } from './menuItem';
 import Icon from '../Icon/icon';
+import Transition from '../Transition/transition';
 
 export interface subMenuProps {
   index?: string;
@@ -81,16 +81,9 @@ const SubMenu: React.FC<subMenuProps> = ({
       }
     });
     return (
-      <CSSTransition
-        in={menuOpen}
-        // 动态添加 dom节点
-        unmountOnExit
-        timeout={300}
-        classNames="zoom-in-top"
-        appear
-      >
+      <Transition in={menuOpen} timeout={300} classNames="zoom-in-top">
         <ul className={subMenuClasses}>{childrenComponent}</ul>
-      </CSSTransition>
+      </Transition>
     );
   };
   return (

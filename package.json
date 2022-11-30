@@ -10,6 +10,7 @@
     "@types/node": "^16.11.68",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@types/react-transition-group": "^4.4.5",
     "classnames": "^2.3.2",
     "font-svg-core": "link:@fortawesome/fontawesom/font-svg-core",
     "node-sass": "^7.0.3",
