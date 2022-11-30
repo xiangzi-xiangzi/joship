@@ -2,19 +2,19 @@
  * @Author: xiangzi xiagnzipapa@qq.com
  * @Date: 2022-10-21 14:20:43
  * @LastEditors: xiangzi xiagnzipapa@qq.com
- * @LastEditTime: 2022-11-07 13:49:41
+ * @LastEditTime: 2022-11-30 15:48:05
  * @Description:
  *
  * Copyright (c) 2022 by xiangzi xiagnzipapa@qq.com, All Rights Reserved.
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import Button, { ButtonSize, ButtonType } from './components/Button/button';
 import Menu from './components/Menu/menu';
 import MenuItem from './components/Menu/menuItem';
 import SubMenu from './components/Menu/subMenu';
 import Icon from './components/Icon/icon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Transition from './components/Transition/transition';
 
 //build libary方式引入 icon
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -22,6 +22,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas);
 
 const App: React.FC = () => {
+  const [show, setShow] = useState(false);
   return (
     <div className="App">
       <main className="main">
