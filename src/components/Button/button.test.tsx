@@ -2,14 +2,14 @@
  * @Author: xiangzi xiagnzipapa@qq.com
  * @Date: 2022-10-31 15:28:21
  * @LastEditors: xiangzi xiagnzipapa@qq.com
- * @LastEditTime: 2022-11-07 12:01:24
+ * @LastEditTime: 2022-12-07 15:07:04
  * @Description:
  *
  * Copyright (c) 2022 by xiangzi xiagnzipapa@qq.com, All Rights Reserved.
  */
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Button, { ButtonProps, ButtonSize, ButtonType } from './button';
+import Button, { ButtonProps, ButtonSizeEnum, ButtonTypeEnum } from './button';
 /* eslint-disable */
 // test('our firest react test case', () => {
 //   //const wrapper = document.createElement(`<span> Hello World! </span>`);
@@ -24,13 +24,13 @@ const defaultProps = {
 };
 
 const testProps: ButtonProps = {
-  btnType: ButtonType.Primary,
-  size: ButtonSize.Large,
+  btnType: ButtonTypeEnum.Primary,
+  size: ButtonSizeEnum.Large,
   className: 'klass',
 };
 
 const testPropsLink: ButtonProps = {
-  btnType: ButtonType.Link,
+  btnType: ButtonTypeEnum.Link,
   href: 'www.baidu.com',
 };
 const disabledProps: ButtonProps = {

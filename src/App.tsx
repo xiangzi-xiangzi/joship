@@ -2,14 +2,17 @@
  * @Author: xiangzi xiagnzipapa@qq.com
  * @Date: 2022-10-21 14:20:43
  * @LastEditors: xiangzi xiagnzipapa@qq.com
- * @LastEditTime: 2022-11-30 15:48:05
+ * @LastEditTime: 2022-12-07 15:19:55
  * @Description:
  *
  * Copyright (c) 2022 by xiangzi xiagnzipapa@qq.com, All Rights Reserved.
  */
 
 import React, { useState } from 'react';
-import Button, { ButtonSize, ButtonType } from './components/Button/button';
+import Button, {
+  ButtonSizeEnum,
+  ButtonTypeEnum,
+} from './components/Button/button';
 import Menu from './components/Menu/menu';
 import MenuItem from './components/Menu/menuItem';
 import SubMenu from './components/Menu/subMenu';
@@ -47,14 +50,14 @@ const App: React.FC = () => {
         </Menu>
 
         <Button disabled> Button default </Button>
-        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
+        <Button btnType={ButtonTypeEnum.Primary} size={ButtonSizeEnum.Large}>
           Button Primary Large
         </Button>
-        <Button btnType={ButtonType.Default} size={ButtonSize.Large}>
+        <Button btnType={ButtonTypeEnum.Default} size={ButtonSizeEnum.Large}>
           Default
         </Button>
         <Button autoFocus> autoFocus </Button>
-        <Button btnType={ButtonType.Link} href="http//www.bilibili.com">
+        <Button btnType={ButtonTypeEnum.Link} href="http//www.bilibili.com">
           link of bilibili
         </Button>
       </main>
