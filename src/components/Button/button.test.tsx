@@ -3,7 +3,7 @@
  * @Date: 2022-10-31 15:28:21
  * @LastEditors: xiangzi xiagnzipapa@qq.com
 <<<<<<< HEAD
- * @LastEditTime: 2022-11-07 12:01:24
+ * @LastEditTime: 2022-12-07 15:31:32
 =======
  * @LastEditTime: 2022-12-07 15:07:04
 >>>>>>> dev
@@ -13,11 +13,7 @@
  */
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-<<<<<<< HEAD
-import Button, { ButtonProps, ButtonSize, ButtonType } from './button';
-=======
 import Button, { ButtonProps, ButtonSizeEnum, ButtonTypeEnum } from './button';
->>>>>>> dev
 /* eslint-disable */
 // test('our firest react test case', () => {
 //   //const wrapper = document.createElement(`<span> Hello World! </span>`);
@@ -32,22 +28,13 @@ const defaultProps = {
 };
 
 const testProps: ButtonProps = {
-<<<<<<< HEAD
-  btnType: ButtonType.Primary,
-  size: ButtonSize.Large,
-=======
   btnType: ButtonTypeEnum.Primary,
   size: ButtonSizeEnum.Large,
->>>>>>> dev
   className: 'klass',
 };
 
 const testPropsLink: ButtonProps = {
-<<<<<<< HEAD
-  btnType: ButtonType.Link,
-=======
   btnType: ButtonTypeEnum.Link,
->>>>>>> dev
   href: 'www.baidu.com',
 };
 const disabledProps: ButtonProps = {
