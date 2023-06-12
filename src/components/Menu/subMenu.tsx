@@ -1,30 +1,18 @@
 /*
  * @Author: xiangzi xiagnzipapa@qq.com
  * @Date: 2022-11-03 14:14:36
-<<<<<<< HEAD
- * @LastEditors: xiangzi xiagnzipapa@qq.com
- * @LastEditTime: 2022-11-07 16:17:38
-=======
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-11-30 15:29:21
->>>>>>> dev
+ * @LastEditors: xiangzi 1004342062@qq.com
+ * @LastEditTime: 2023-06-12 11:01:14
  * @Description:
  *
  * Copyright (c) 2022 by xiangzi xiagnzipapa@qq.com, All Rights Reserved.
  */
 import React, { FunctionComponentElement, useContext, useState } from 'react';
 import classNames from 'classnames';
-<<<<<<< HEAD
 import { CSSTransition } from 'react-transition-group';
 import { MenuContext } from './menu';
 import { MenuItemProps } from './menuItem';
 import Icon from '../Icon/icon';
-=======
-import { MenuContext } from './menu';
-import { MenuItemProps } from './menuItem';
-import Icon from '../Icon/icon';
-import Transition from '../Transition/transition';
->>>>>>> dev
 
 export interface subMenuProps {
   index?: string;
@@ -93,7 +81,6 @@ const SubMenu: React.FC<subMenuProps> = ({
       }
     });
     return (
-<<<<<<< HEAD
       <CSSTransition
         in={menuOpen}
         // 动态添加 dom节点
@@ -104,11 +91,6 @@ const SubMenu: React.FC<subMenuProps> = ({
       >
         <ul className={subMenuClasses}>{childrenComponent}</ul>
       </CSSTransition>
-=======
-      <Transition in={menuOpen} timeout={300} classNames="zoom-in-top">
-        <ul className={subMenuClasses}>{childrenComponent}</ul>
-      </Transition>
->>>>>>> dev
     );
   };
   return (
